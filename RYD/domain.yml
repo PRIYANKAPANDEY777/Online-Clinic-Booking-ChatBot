@@ -1,0 +1,58 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thanks
+  - clinic_finder
+  - location
+
+entities:
+- facility
+- location
+
+slots:
+  facility_address:
+    type: unfeaturized
+  location:
+    type: unfeaturized
+
+actions:
+  - utter_Welcome
+  - utter_ask_location
+  - utter_ask_what_can_I_do
+  - utter_say_address
+  - action_find_address
+  - action_slot_reset
+
+responses:
+  utter_greet:
+  - text: "Hey!"
+
+  utter_ask_what_can_I_do:
+  - text: "What can I do for you"
+
+  utter_Welcome:
+  - text: "Your welcome"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_location:
+  - text: "Please tell me either the location or your pincode"
+
+  utter_say_address:
+  - text: "The address is {facility_address}"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
