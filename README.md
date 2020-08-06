@@ -4,9 +4,10 @@ You’ll need to get your vaccines at least a month before you travel to be full
 
 However, even a last-minute visit to a healthcare provider can be helpful to get medicines and advice for your trip.
 How we built it?
-Backend: Python + Django hosted on Ngrok
-Frontend: Facebook Messenger Chatbot
-Medical Information: RASA API
+
+1. Backend: Python + Django hosted on Ngrok
+2. Frontend: Facebook Messenger Chatbot
+3. Medical Information: RASA API
 
 Getting Started
 Here, you will be able to step wise instructions to run this bot. Additionally, outputs of different conversations will be provide which will demonstrate use of AI and Natural Language Processing.These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
